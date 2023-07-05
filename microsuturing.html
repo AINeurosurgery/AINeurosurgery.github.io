@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>MicroSuturing</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body font-family: 'Didact Gothic'>
+    <div class="container">
+        <div class="row">
+            <h2 class="col-md-12 text-center" font-family: 'Didact Gothic'>
+                FROM FELINE CLASSIFICATION TO SKILLS EVALUATION: A MULTITASK LEARNING FRAMEWORK FOR EVALUATING MICRO SUTURING NEUROSURGICAL SKILLS
+                </br>
+                <small>
+                    ICIP 2023
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+						<a href="https://scholar.google.co.in/citations?user=ew9VPnAAAAAJ&hl=en">
+                            Rohan Raju Dhanakshirur
+                        </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.researchgate.net/profile/Varidh-Katiyar">
+                            Varidh Katiyar
+                        </a>
+                        </br>AIIMS New-Delhi
+                    <li>
+                        <a href="https://www.researchgate.net/profile/Ravi-Sharma-19">
+                            Ravi Sharma
+                        </a>
+                        </br>AIIMS New-Delhi
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Ashish_Suri">
+                            Ashish Suri
+                        </a>
+                        </br>AIIMS New-Delhi
+                    </li>
+                    <li>
+			             <a href="https://www.cse.iitd.ac.in/~pkalra/">
+                        Prem Kumar Kalra
+			             </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~chetan">
+							Chetan Arora
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" align="middle">
+            <div class="btn-group" role="group" aria-label="Top menu" align="middle">
+                <a class="btn btn-primary" href="">Paper</a>
+                <a class="btn btn-primary" href="http://www.aiimsnets.org/microsuturing.asp">Data</a>
+                <a class="btn btn-primary" href="https://github.com/AINeurosurgery/Microsuturing-Image-AI">Code</a>
+            </div>
+        </div>
+        
+        <br><br>
+
+        <div class="row" id="header_img" align="middle">
+            <image src="images/arch_final.png" class="img-responsive" alt="overview" width="700px">
+        </div>
+		
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Abstract
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                    Automated skill evaluation of a trainee is key to the utility of the surgical training system. The focus of this paper is to develop an automated tool for the assessment of trainees for any suturing task. The real-life training datasets for the micro-suturing task are often small, with long-tailed distribution, making it difficult to develop machine-learning-based tools for automated assessment. Further, micro-suturing is often performed at various magnifications and suture sizes, which makes the automated assessment more challenging compared to macro-suturing. Hence, currently, assessment is done manually by an expert using the final outcome image. In this paper, we propose a multi-task learning-based convolutional-neural-network regression model to score the effectualness of the micro-suturing task from the final outcome image. We propose a novel equivalent of the logit-adjustment (used in classification) applicable to regression formulation which effectively handles the problems associated with the long-tail distribution of the data. Additionally, we contribute the largest open-access dataset for suturing images and the first dataset pertaining to the micro-suturing task. We also demonstrate that the performance of the proposed algorithm surpasses the performance of human experts and also other state-of-the-art (SOTA) algorithms. 
+                </p>
+            </div>
+        </div>
+		
+
+	   
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    BibTeX (Citation)
+                </h4>
+				<pre style="white-space: pre-wrap; background: hsl(220, 50%, 95%); font-size: 11px">
+@@inproceedings{basu2022unsupervised,
+  title={Unsupervised Contrastive Learning of Image Representations from Ultrasound Videos with Hard Negative Mining},
+  author={Basu, Soumen and Singla, Somanshu and Gupta, Mayank and Rana, Pratyaksha and Gupta, Pankaj and Arora, Chetan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={423--433},
+  year={2022},
+  organization={Springer}
+}			
+                </pre>
+			</div>
+        </div> -->
+        <!--div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4 font-family: 'Didact Gothic'>
+                    Acknowledgements
+                </h5>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                This work was supported by ???.
+                </p>
+            </div>
+        </div-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                <center style="font-size:10px"><b>Credits:</b> Template of this webpage from <a href="http://www.mgharbi.com/">
+                    here.
+                </a></center>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
