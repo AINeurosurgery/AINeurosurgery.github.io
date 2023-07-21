@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>LearnableQPN</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body font-family: 'Didact Gothic'>
+    <div class="container">
+        <div class="row">
+            <h2 class="col-md-12 text-center" font-family: 'Didact Gothic'>
+                Learnable Query Initialization for Surgical Instrument Instance Segmentation
+                </br>
+                <small>
+                    MICCAI 2023
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+						<a href="https://scholar.google.co.in/citations?user=ew9VPnAAAAAJ&hl=en">
+                            Rohan Raju Dhanakshirur
+                        </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/k-n-ajay-shastry-b48982158/?originalSubdomain=in">
+                            K N Ajay Shastry
+                        </a>
+                        </br>IIT Delhi
+                    <li>
+                        <a href="https://www.linkedin.com/in/kaustubh-r-borgavi-436855194/">
+                            Kaustubh Borgavi
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Ashish_Suri">
+                            Ashish Suri
+                        </a>
+                        </br>AIIMS New-Delhi
+                    </li>
+                    <li>
+			             <a href="https://www.cse.iitd.ac.in/~pkalra/">
+                        Prem Kumar Kalra
+			             </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~chetan">
+							Chetan Arora
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" align="middle">
+            <div class="btn-group" role="group" aria-label="Top menu" align="middle">
+                <a class="btn btn-primary" href="">Paper</a>
+                <a class="btn btn-primary" href="">Data</a>
+                <a class="btn btn-primary" href="https://github.com/AINeurosurgery/Learnable-QPD-for-maskDINO">Code</a>
+            </div>
+        </div>
+        
+        <br><br>
+
+        <div class="row" id="header_img" align="middle">
+            <image src="images/block_dgm_final1.pdf" class="img-responsive" alt="overview" width="700px">
+        </div>
+		
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Abstract
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                    Surgical tool classification and instance segmentation are crucial for minimally invasive surgeries and related applications. Though most of the state-of-the-art for instance segmentation in natural images use transformer-based architectures, they have not been successful for medical instruments. In this paper, we investigate the reasons for the failure. Our analysis reveals that this is due to incorrect query initialization, which is unsuitable for fine-grained classification of highly occlude objects in a low data setting, typical for medical instruments. We propose a class-agnostic Query Proposal Network (QPN) to improve query initialization inputted to the decoder layers. Towards this, we propose a deformable-cross-attention-based learnable Query Proposal Decoder (QPD). The proposed QPN improves the recall rate of the query initialization by 44.89% at 0.9 IOU. This leads to an improvement in segmentation performance by 1.84% on Endovis17 and 2.09% on Endovis18 datasets, as measured by ISI-IOU. 
+                </p>
+            </div>
+        </div>
+		
+
+	   
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    BibTeX (Citation)
+                </h4>
+				<pre style="white-space: pre-wrap; background: hsl(220, 50%, 95%); font-size: 11px">
+@@inproceedings{basu2022unsupervised,
+  title={Unsupervised Contrastive Learning of Image Representations from Ultrasound Videos with Hard Negative Mining},
+  author={Basu, Soumen and Singla, Somanshu and Gupta, Mayank and Rana, Pratyaksha and Gupta, Pankaj and Arora, Chetan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={423--433},
+  year={2022},
+  organization={Springer}
+}			
+                </pre>
+			</div>
+        </div> -->
+        <!--div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4 font-family: 'Didact Gothic'>
+                    Acknowledgements
+                </h5>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                This work was supported by ???.
+                </p>
+            </div>
+        </div-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                <center style="font-size:10px"><b>Credits:</b> Template of this webpage from <a href="http://www.mgharbi.com/">
+                    here.
+                </a></center>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
