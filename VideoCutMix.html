@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>LearnableQPN</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body font-family: 'Didact Gothic'>
+    <div class="container">
+        <div class="row">
+            <h2 class="col-md-12 text-center" font-family: 'Didact Gothic'>
+                VideoCutMix: Temporal Segmentation of Surgical Videos in Scarce Data Scenarios
+                </br>
+                <small>
+                    MICCAI 2024
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+						<a href="https://rohanrd.github.io">
+                            Rohan Raju Dhanakshirur
+                        </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mrinal-tyagi-02a1351b1/?originalSubdomain=in">
+                            Mrinal Tyagi
+                        </a>
+                        </br>IIT Delhi
+                    <li>
+                        <a href="https://scholar.google.co.in/citations?user=w99r4LsAAAAJ&hl=en">
+                            Britty Baby
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Ashish_Suri">
+                            Ashish Suri
+                        </a>
+                        </br>AIIMS New-Delhi
+                    </li>
+                    <li>
+			             <a href="https://www.cse.iitd.ac.in/~pkalra/">
+                        Prem Kumar Kalra
+			             </a>
+                      </br>IIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.cse.iitd.ac.in/~chetan">
+							Chetan Arora
+                        </a>
+                        </br>IIT Delhi
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" align="middle">
+            <div class="btn-group" role="group" aria-label="Top menu" align="middle">
+                <a class="btn btn-primary" href="">Paper</a>
+                <a class="btn btn-primary" href="https://github.com/AINeurosurgery/VideoCutMix/tree/main">Data</a>
+                <a class="btn btn-primary" href="https://github.com/AINeurosurgery/VideoCutMix/tree/main">Code</a>
+            </div>
+        </div>
+        
+        <br><br>
+
+        <div class="row" id="header_img" align="middle">
+            <image src="images/proposed_clubbed.png" class="img-responsive" alt="overview" width="700px">
+        </div>
+		
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Abstract
+                </h4>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                    Temporal Action Segmentation (TAS) of a surgical video is an important first step for a variety of video analysis tasks such as skills assessment, surgical assistance and robotic surgeries. Limited data availability due to costly acquisition and annotation makes data augmentation imperative in such a scenario. However, extending directly from an image-augmentation strategy, most video augmentation techniques disturb the optical flow information in the process of generating an augmented sample. This creates difficulty in training. In this paper, we propose a simple-yet-efficient, flow-consistent, video-specific data augmentation technique suitable for TAS in scarce data conditions. 
+
+                    We observe that TAS errors commonly occur at the action boundaries due to their scarcity in the datasets. Hence, we propose a novel strategy that generates pseudo-action boundaries without affecting optical flow elsewhere. Further, we also propose a sample-hardness-inspired curriculum where we train the model on easy samples first with only a single label observed in the temporal window. 
+
+                    Additionally, we contribute the first-ever non-robotic Neuro-endoscopic Trainee Simulator (NETS) dataset for the task of TAS. We validate our approach on the proposed NETS, along with publicly available JIGSAWS and Cholec T-50 datasets. Compared to without the use of any data augmentation, we report an average improvement of 7.89%, 5.53%, 2.80%, respectively, on the 3 datasets in terms of edit score using our technique. The reported numbers are improvements averaged over 9 state-of-the-art (SOTA) action segmentation models using two different temporal feature extractors (I3D and VideoMAE). On average, the proposed technique outperforms the best-performing SOTA data augmentation technique by 3.94%, thus enabling us to setup a new SOTA for action segmentation in each of these datasets.
+                </p>
+            </div>
+        </div>
+		
+
+	   
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    BibTeX (Citation)
+                </h4>
+				<pre style="white-space: pre-wrap; background: hsl(220, 50%, 95%); font-size: 11px">
+@@inproceedings{basu2022unsupervised,
+  title={Unsupervised Contrastive Learning of Image Representations from Ultrasound Videos with Hard Negative Mining},
+  author={Basu, Soumen and Singla, Somanshu and Gupta, Mayank and Rana, Pratyaksha and Gupta, Pankaj and Arora, Chetan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={423--433},
+  year={2022},
+  organization={Springer}
+}			
+                </pre>
+			</div>
+        </div> -->
+        <!--div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4 font-family: 'Didact Gothic'>
+                    Acknowledgements
+                </h5>
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                This work was supported by ???.
+                </p>
+            </div>
+        </div-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" font-family: 'Didact Gothic'>
+                <center style="font-size:10px"><b>Credits:</b> Template of this webpage from <a href="http://www.mgharbi.com/">
+                    here.
+                </a></center>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
